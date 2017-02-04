@@ -4,33 +4,19 @@ import Slider from 'material-ui/Slider';
 import StateChangeStepper from './stateChangeStepper';
 import SliderBar from './slider';
 
-const styles = {
-  headline: {
-    fontSize: 24,
-    paddingTop: 16,
-    marginBottom: 12,
-    fontWeight: 400,
-  },
-  text: {
-    marginLeft: 5
-  }
-};
-
 const Toolbar = (props) => {
   const { getData, sendUpdate, history, curIndex, getCurAction, curAction } = props;
 
   return (
     <Tabs>
       <Tab label="Time Travel" >
-        <div >
-          <div style={styles.text}> {curAction} </div>
-          <SliderBar
-            getData={getData}
-            sendUpdate={sendUpdate}
-            getCurAction={getCurAction}
-            history={history}
-          />
-        </div>
+        <div style={styles.text}> {curAction} </div>
+        <SliderBar
+          getData={getData}
+          sendUpdate={sendUpdate}
+          getCurAction={getCurAction}
+          history={history}
+        />
       </Tab>
       <Tab label="Undo/Redo" >
         <div>
@@ -54,6 +40,19 @@ const Toolbar = (props) => {
       </Tab>
     </Tabs>
   );
+};
+
+const styles = {
+  headline: {
+    fontSize: 24,
+    paddingTop: 16,
+    marginBottom: 12,
+    fontWeight: 400,
+  },
+  text: {
+    marginLeft: 5,
+    paddingTop: 10
+  }
 };
 
 Toolbar.propTypes = {

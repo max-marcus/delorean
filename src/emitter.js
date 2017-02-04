@@ -47,7 +47,7 @@ function send(action, state, options, type, instanceId, listeners) {
       name: options.name,
       location: window.location.hash
     };
-    if (message.type === 'ACTION') history.push(stringify(message));
+    history.push(stringify(message));
     let key = Object.keys(listeners)[0];
     savedFuncs[key] = listeners[key][0];
     handleMessages(message, listeners);
