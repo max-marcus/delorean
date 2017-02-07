@@ -9,4 +9,4 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export const delorean = dlorean;
-export const Delorean = Dlorean;
+export const DeloreanTools = Dlorean;
