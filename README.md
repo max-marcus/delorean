@@ -1,5 +1,3 @@
-[![NPM](https://nodei.co/npm/mobx-delorean.png?compact=true)](https://npmjs.org/package/mobx-delorean)
-
 # Delorean
 An intuitive, in-app MobX + React developer tool employing time travel debugging and undo/redo actions. Quickly and easily gain insight into MobX-React projects, with just three lines of code.
 
@@ -9,6 +7,7 @@ An intuitive, in-app MobX + React developer tool employing time travel debugging
 - Easy undo/redo of actions without unwanted side effects
 - Alternate timeline debugging. Reverse your application's state and branch into a new timeline with the option of returning to your original state.
 
+[![NPM](https://nodei.co/npm/mobx-delorean.png?compact=true)](https://npmjs.org/package/mobx-delorean)
 # Installation
 
 ### NPM Module
